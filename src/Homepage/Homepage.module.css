@@ -1,170 +1,206 @@
+
+
+
 .mainContainer{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: start;
- }
- .contentBox{
-    height: 100%;
-    width: 70%;
-    overflow: auto;
-    padding: 2rem;
-    box-sizing: border-box;
- }
- .drawer{
-    position: fixed;
-    top: 0;
-    right: -500px;
-    width: 500px;
-    height: 100%;
-    background-color: rgb(223, 223, 223);
-    transition: right 0.3s ease;
-    padding: 1rem;
-    box-sizing: border-box;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
- }
- .drawerContainer{
-    width: 30%;
-    height: 100%;
- }
- .headerContainer{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem;
-    box-sizing: border-box;
-    border-bottom: 1px solid rgb(208, 208, 208);
- }
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: start;
+}
+.contentBox{
+   height: 100%;
+   width: 70%;
+   overflow: auto;
+   padding: 2rem;
+   box-sizing: border-box;
+}
+.drawer{
+   position: fixed;
+   top: 0;
+   right: -500px;
+   width: 500px;
+   height: 100%;
+   background-color: rgb(223, 223, 223);
+   transition: right 0.3s ease;
+   padding: 1rem;
+   box-sizing: border-box;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.drawerContainer{
+   width: 30%;
+   height: 100%;
+}
+.headerContainer{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0.5rem;
+   box-sizing: border-box;
+   border-bottom: 1px solid rgb(208, 208, 208);
+}
+
+
+.drawerHeading{
+   font-size: 20px;
+   font-weight: 600;
+  
+}
+
+
+.drawerCloseButton{
+   font-size: 20px;
+   font-weight: 600;
+   border-radius: 50%;
+   cursor: pointer;
+   height: 30px;
+   width: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.drawerCloseButton:hover{
+   background-color: rgb(230, 230, 230);
+}
+
+
+.form{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: start;
+   align-items: start;
+   gap: 2rem;
+   margin-top:2rem;
+   padding: 1rem;
+   box-sizing: border-box;
+}
+
+
+.titleBox{
+   display: flex;
+   flex-direction: column;
+   justify-content: start;
+   align-items: start;
+   gap: 0.5rem;
+}
+.titleText{
+   margin: 0;
+   padding: 0;
+   font-size: 18px;
+   font-weight: 600;
+}
+.inputField{
+   outline: none;
+   padding: 0.5rem;
+   font-size: 16px;
+}
+
+
+.eachColor{
+   height: 30px;
+   width: 30px;
+   border-radius: 50%;
+   cursor: pointer;
+}
+.colorsBox{
+   display: flex;
+   gap: 1rem;
+
+
+}
+
+
+.filterByText{
+   width: 100%;
+   display: flex;
+   justify-content: start;
+   align-items: center;
+   font-size: 20px;
+   font-weight: bold;
+}
+
+
+.filterBox{
+   width: 80%;
+   display: flex;
+   margin-top: 3rem;
+   justify-content: start;
+   align-items: center;
+   gap: 3rem;
+}
+
+
+.colorFilterBox{
  
- 
- .drawerHeading{
-    font-size: 20px;
-    font-weight: 600;
-   
- }
- 
- 
- .drawerCloseButton{
-    font-size: 20px;
-    font-weight: 600;
-    border-radius: 50%;
-    cursor: pointer;
-    height: 30px;
-    width: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
- }
- .drawerCloseButton:hover{
-    background-color: rgb(230, 230, 230);
- }
- 
- 
- .form{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    gap: 2rem;
-    margin-top:2rem;
-    padding: 1rem;
-    box-sizing: border-box;
- }
- 
- 
- .titleBox{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    gap: 0.5rem;
- }
- .titleText{
-    margin: 0;
-    padding: 0;
-    font-size: 18px;
-    font-weight: 600;
- }
- .inputField{
-    outline: none;
-    padding: 0.5rem;
-    font-size: 16px;
- }
- 
- 
- .eachColor{
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    cursor: pointer;
- }
- .colorsBox{
-    display: flex;
-    gap: 1rem;
- 
- 
- }
- 
- 
- .filterByText{
-    width: 100%;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    font-size: 20px;
-    font-weight: bold;
- }
- 
- 
- .filterBox{
-    width: 80%;
-    display: flex;
-    margin-top: 3rem;
- }
- 
- 
- .colorFilterBox{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    gap: 1rem;
- }
- 
- 
- .createCreationButtonBox{
-    width: 100%;
-    display: flex;
-    justify-content: start;
-    margin-top: 3rem;
- }
- 
- 
- .createCreationButton{
-    background-color: white;
-    color: black;
-    border: none;
-    outline: none;
-    border-radius: 7px;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 16px;
-    margin-top: 5rem;
-    border: 1px solid black;
- }
- 
- 
- .createCreationButton:hover{
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
- }
- 
- 
- 
- 
- 
- 
+   display: flex;
+   flex-direction: column;
+   justify-content: start;
+   align-items: start;
+   gap: 1rem;
+}
+
+
+.createCreationButtonBox{
+   width: 100%;
+   display: flex;
+   justify-content: start;
+   margin-top: 3rem;
+}
+
+
+.createCreationButton{
+   background-color: white;
+   color: black;
+   border: none;
+   outline: none;
+   border-radius: 7px;
+   padding: 0.5rem 1rem;
+   cursor: pointer;
+   font-weight: 600;
+   font-size: 16px;
+   /* margin-top: 5rem; */
+   border: 1px solid black;
+}
+
+
+.createCreationButton:hover{
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+.progressBarContainer{
+   width: 100%;
+   display: flex;
+   justify-content: start;
+   margin-top:3rem;
+   gap: 1rem;
+   align-items: center;
+}
+.progressBarEmpty{
+   height: 20px;
+   width: 30%;
+   border-radius: 7px;
+   border: 1px solid black;
+}
+.filledProgress{
+   height: 100%;
+   border-radius: 7px;
+   background-color: black;
+}
+
+
+.clearFilterText{
+   margin: 0;
+   padding: 0;
+   text-decoration:underline ;
+   font-style: italic;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+
+
+
+

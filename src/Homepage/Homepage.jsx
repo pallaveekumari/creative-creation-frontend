@@ -47,7 +47,6 @@ const Homepage = () => {
 
 
 
-
  const handleSelectColorForFilter = (color) => {
    let updatedData = creations.filter((el, i) => {
      return (
@@ -69,6 +68,13 @@ const Homepage = () => {
    setDrawerOpenStatus(false);
    setFormData(init);
    setSelectedColorInDrawer("");
+ };
+
+
+ const handleClearFilter = () => {
+   setFilteredList(creations);
+   setTextFilter("");
+   setColorFilterSelected("");
  };
 
 
@@ -122,32 +128,57 @@ const Homepage = () => {
              value={textFilter}
              onChange={(e) => {
                setTextFilter(e.target.value);
-               let updatedData = creations.filter((el, i) => {
-                 return colorFilterSelected != ""
-                   ? el.bgColor == colorFilterSelected
-                   : true &&
-                       (el.title
-                         .toLowerCase()
-                         .includes(e.target.value.toLowerCase()) ||
-                         el.subTitle
-                           .toLowerCase()
-                           .includes(e.target.value.toLowerCase()));
+               let filter1 = creations.filter((el, i) => {
+                 if (colorFilterSelected == "") {
+                   return el;
+                 } else {
+                   return el.bgColor == colorFilterSelected;
+                 }
                });
-               setFilteredList(updatedData);
+               let filter2 = filter1.filter((el, i) => {
+                 if (e.target.value == "") {
+                   return el;
+                 } else {
+                   return (
+                     el.title
+                       .toLowerCase()
+                       .includes(e.target.value.toLowerCase()) ||
+                     el.subTitle
+                       .toLowerCase()
+                       .includes(e.target.value.toLowerCase())
+                   );
+                 }
+               });
+               setFilteredList(filter2);
              }}
              type="text"
              className={styles.inputField}
              placeholder="search for title or subtitle"
            />
          </div>
+         <p className={styles.clearFilterText} onClick={handleClearFilter}>
+           clear filter
+         </p>
+       </div>
+       <div className={styles.progressBarContainer}>
+         <div className={styles.progressBarEmpty}>
+           <div
+             className={styles.filledProgress}
+             style={{ width: `${(filteredList.length / 5) * 100}%` }}
+           ></div>
+         </div>{" "}
+         {filteredList.length} / 5 Creatives
        </div>
        <div className={styles.createCreationButtonBox}>
          <button
            className={styles.createCreationButton}
-           disabled={drawerOpenStatus}
+           disabled={drawerOpenStatus || creations.length == 5}
            style={{
-             opacity: drawerOpenStatus ? "0.5" : "1",
-             cursor: drawerOpenStatus ? "not-allowed" : "pointer",
+             opacity: drawerOpenStatus || creations.length == 5 ? "0.5" : "1",
+             cursor:
+               drawerOpenStatus || creations.length == 5
+                 ? "not-allowed"
+                 : "pointer",
            }}
            onClick={
              drawerOpenStatus
@@ -181,6 +212,8 @@ const Homepage = () => {
 
 
 export default Homepage;
+
+
 
 
 
