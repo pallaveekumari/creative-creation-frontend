@@ -16,7 +16,7 @@ Hello Everyone !🌏 I am Pallavee Kumari and I am presenting my project.
  - ### On Form Submission.
 ![App Screenshot](https://github.com/pallaveekumari/creative-creation-frontend/blob/master/src/Screenshots/Screenshot%203.png?raw=true)
 
- - ### After submitting the form from the drawer creative card will come on the page with the title, subtitle, and background image and the progress bar will also increase.
+ - ### After submitting the form from the drawer creative card will come on the page with the title, subtitle, and background color and the progress bar will also increase.
 
  - ### Scroll Experience.
 ![App Screenshot](https://github.com/pallaveekumari/creative-creation-frontend/blob/master/src/Screenshots/Screenshot%204.png?raw=true)
