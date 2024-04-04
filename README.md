@@ -6,28 +6,28 @@ Hello Everyone !🌏 I am Pallavee Kumari and I am presenting my project.
 
  - ### Default Page.
 
-![App Screenshot](https://github.com/pallaveekumari/simfoni/blob/master/src/screenshots/Navbar.png?raw=true?raw=true)
+![App Screenshot](https://github.com/pallaveekumari/creative-creation-frontend/blob/master/src/Screenshots/Screenshot%201.png?raw=true)
 
    
- - ### SearchBar.
- - ### Home Page.
- - ### Product Page.
- - ### ProductDetails Page.
- - ### AllProducts Page.
- - ### Sorting.
- - ### Filtering.
- - ### Debouncing.
- - ### Carousel.
- - ### Footer.
+ - ### Drawer Open.
 
-## Instruction for searching the data 👇
+![App Screenshot](https://github.com/pallaveekumari/creative-creation-frontend/blob/master/src/Screenshots/Screenshot%202.png?raw=true)
+   
+ - ### On Form Submission.
 
- - ### you can search only by the keyword "room" and "light shadow room" because API is giving the correct responses only when you search by this keyword. 
+![App Screenshot](https://github.com/pallaveekumari/creative-creation-frontend/blob/master/src/Screenshots/Screenshot%203.png?raw=true)
+   
+ - ### Scroll Experience.
+
+![App Screenshot](https://github.com/pallaveekumari/creative-creation-frontend/blob/master/src/Screenshots/Screenshot%204.png?raw=true)
+
+![App Screenshot](https://github.com/pallaveekumari/creative-creation-frontend/blob/master/src/Screenshots/Screenshot%205.png?raw=true)
+ 
 
  ## Tech Stack
 
 *Client:* HTML, CSS, JavaScript, React, Netlify, Github.
 
-### Netlify Link:https://simfoni.netlify.app
+### Netlify Link:https://bright-crepe-f7ba93.netlify.app/
 
-### Github Link:https://github.com/pallaveekumari/simfoni
+### Github Link:https://github.com/pallaveekumari/creative-creation-frontend
